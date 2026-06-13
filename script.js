@@ -110,7 +110,7 @@ const response=
 
 await fetch(
 
-" https://ai-note-summarizer-1.onrender.com",
+"https://ai-note-summarizer-1.onrender.com/summarize",
 
 {
 
