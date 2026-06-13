@@ -110,7 +110,7 @@ const response=
 
 await fetch(
 
-"http://localhost:3000/summarize",
+" https://ai-note-summarizer-1.onrender.com",
 
 {
 
