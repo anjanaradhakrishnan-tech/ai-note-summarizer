@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>AI Note Summarizer Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🧠 AI Note Summarizer Pro</h1>
+
+<input
+type="file"
+id="fileInput"
+accept=".txt">
+
+<br><br>
+
+<textarea
+id="notes"
+placeholder="Paste notes here">
+</textarea>
+
+<p>
+Characters:
+<span id="charCount">0</span>
+</p>
+
+<select id="mode">
+
+<option>Short</option>
+
+<option>Medium</option>
+
+<option>Detailed</option>
+
+</select>
+
+<br><br>
+
+<button onclick="summarize()">
+Summarize
+</button>
+
+<button onclick="copySummary()">
+Copy
+</button>
+
+<button onclick="downloadSummary()">
+Download
+</button>
+
+<button onclick="toggleTheme()">
+Dark Mode
+</button>
+
+<button onclick="clearAll()">
+Clear
+</button>
+
+<h2>Summary</h2>
+
+<div id="result">
+Summary appears here
+</div>
+
+<p>
+Words:
+<span id="wordCount">0</span>
+</p>
+
+<h2>History</h2>
+
+<div id="history"></div>
+
+<button onclick="clearHistory()">
+Clear History
+</button>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
